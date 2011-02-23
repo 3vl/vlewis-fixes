@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='timepickerDemo'>
+	<inherits name="com.summatech.gwt.GwtTimepicker" />
+	<entry-point class='com.summatech.gwt.demo.client.TimepickerDemo' />
+	<source path="client" />
+</module>
