@@ -33,7 +33,9 @@ public class TimepickerDemo implements EntryPoint {
 		
 		FlowPanel pnlTwentyfour = new FlowPanel();
 		pnlTwentyfour.add(new Label("24 Hour format..."));
-		pnlTwentyfour.add(new HourMinutePicker(PickerFormat._24_HOUR));
+		HourMinutePicker picker = new HourMinutePicker(PickerFormat._24_HOUR);
+		picker.setTime("", 8, 34);
+		pnlTwentyfour.add(picker);
 		pnlTwentyfour.setWidth("60px");
 		pnlTwentyfour.getElement().getStyle().setMargin(35, Unit.PX);
 		pnlTwentyfour.getElement().getStyle().setPadding(10, Unit.PX);
