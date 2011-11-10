@@ -439,8 +439,7 @@ public class HourMinutePicker extends Composite {
 	 * @param minute
 	 */
 	public void setTime(String suffix, int hour, int minute) {
-		this.selectedSuffix = suffix == null || !suffix.equals("AM") || !suffix.equals("PM") ? "AM"
-				: suffix;
+		this.selectedSuffix = "AM".equals(suffix) || "PM".equals(suffix) ? suffix : "AM";
 		this.selectedHour = hour;
 		this.selectedMinute = minute / (60 / timeSlices);
 		refreshWidget(selectedSuffix, selectedHour, selectedMinute);
